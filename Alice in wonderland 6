@@ -8,11 +8,12 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int sum=0,t=n,b=n;
-        while(t%10 !=0){
-            t=b%10;
-            sum+=t;
-            b=b/10;
-        }
+        t=b%10;
+        sum+=t;
+        b=b/10;
+        t=b%10;
+        sum+=t;
+        b=b/10;
         System.out.print("Bird said:"+n+"\nAlice must go in path-"+sum);
     }
 }
