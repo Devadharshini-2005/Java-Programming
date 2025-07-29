@@ -8,12 +8,7 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         double n = sc.nextInt();
         double g=0;
-        if(n < 15000){
-            g = n+n*0.15+n*0.90;
-        }
-        else{
-            g = n+5000+n*0.98;
-        }
+        g=(n < 15000) ? n+n*0.15+n*0.90 : n+5000+n*0.98;
         System.out.printf("%.2f",g);
     }
 }
