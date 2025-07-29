@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        float f = sc.nextFloat();
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        System.out.print((int)Math.floor(f) + "\n" + (int) Math.ceil(f) + "\n" +(int) Math.sqrt(n1) + "\n" + (int)Math.pow(n2,n3));
+    }
+}
