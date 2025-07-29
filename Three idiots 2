@@ -10,13 +10,7 @@ public class Solution {
         int n2 = sc.nextInt();
         int n3 = sc.nextInt();
         int n4 = sc.nextInt();
-        float m1 = (n1 + n3) / 2, m2 = (n2 + n4) / 2;
-        if((n1+n3)%2 == 1){
-            m1+=0.5;
-        }
-        if((n2+n4)%2 == 1){
-            m2+=0.5;
-        }
+        float m1 = (float)(n1 + n3) / 2, m2 = (float)(n2 + n4) / 2;
         System.out.print("Binoy's house is located at ("+m1+","+m2+")");
     }
 }
