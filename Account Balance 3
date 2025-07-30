@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int bamt = sc.nextInt();
+        int c = sc.nextInt();
+        if(c==1 || c==2){
+            int amt = sc.nextInt();
+            if(amt <= bamt){
+                switch(c){
+                    case 1: 
+                        bamt+=amt;
+                        break;
+                    case 2:
+                        bamt-=amt;
+                        break;
+                }
+                System.out.println(bamt);  
+        }
+        else{
+            System.out.println("Insufficient Balance");
+        }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
