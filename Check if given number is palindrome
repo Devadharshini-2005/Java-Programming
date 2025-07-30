@@ -9,11 +9,15 @@ public class Solution {
         int n = sc.nextInt();
         int t=n,a,b=0;
         if(n>=100 && n<=999){
-            while(t != 0){
             a=t%10;
             b=b*10+a;
             t/=10;
-            }
+            a=t%10;
+            b=b*10+a;
+            t/=10;
+            a=t%10;
+            b=b*10+a;
+            t/=10;
             if(b==n){
             System.out.println("palindrome");
         }
