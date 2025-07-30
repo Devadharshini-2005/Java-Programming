@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        char ch = sc.next().charAt(0);
+        if(ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch== '%'){
+        switch(ch){
+            case '+':
+                float add = a+b;
+                System.out.printf("Addition of two number is %.1f",add);
+                break;
+            case '-':
+                float sub = a-b;
+                System.out.printf("Subtraction of two number is %.1f",sub);
+                break;
+            case '*':
+                float mul = a*b;
+                System.out.printf("Multiplication of two number is %.1f",mul);
+                break;
+            case '/':
+                float div = a/b;
+                System.out.printf("Division of two number is %.1f",div);
+                break;
+            case '%':
+                float mod = a%b;
+                System.out.printf("Modulo of two number is %.1f",mod);
+                break;
+        }}
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
