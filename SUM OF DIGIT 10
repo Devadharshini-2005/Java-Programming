@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int t=n,b,a=0;
+        if(n>99){
+            while(t != 0){
+                b=t%10;
+                t=t/10;
+                a+=b;
+            }
+            System.out.println("Sum of digit is "+a);
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
